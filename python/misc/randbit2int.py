@@ -1,6 +1,12 @@
 import random
 import sys
 
+#take two random bits:
+#00 redo
+#01 return 1
+#10 return 2
+#11 return 3
+
 def randbit():
     return random.randrange(2)
     
@@ -17,7 +23,7 @@ def randbit_to_int():
     
     
 if __name__ == "__main__":
-    trials = 500000
+    trials = 60000
     results = {}
     for i in range(trials):
         curr = randbit_to_int()
